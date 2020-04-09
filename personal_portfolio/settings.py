@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'dfkwh*-jswje=qt-d*z+7eq_*z^-r53-^xnj@5l#&^kphg5om)'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['http://ejtpersonalsite.azurewebsites.net/']
 
 
 # Application definition
