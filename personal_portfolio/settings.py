@@ -25,7 +25,7 @@ SECRET_KEY = 'dfkwh*-jswje=qt-d*z+7eq_*z^-r53-^xnj@5l#&^kphg5om)'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['http://ejtpersonalsite.azurewebsites.net/']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
