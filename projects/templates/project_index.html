@@ -4,24 +4,58 @@
 
 {% block page_content %}
 
-<h1>Projects</h1>
-<div class="row">
-
-    {% for project in projects %}
-        <div class="col-md-4">
-            <div class="card mb-2">
-                <img class="card-img-top" src="{% static project.image %}">
-                <div class="card-body">
-                    <h5 class="card-title">{{ project.title }}</h5>
-                    <p class="card-text">{{ project.description }}</p>
-                    <a href="{% url 'project_detail' project.pk %}" class="btn btn-primary">
-                        Read More
-                    </a>
+<section id="headline">
+    <div class="jumbotron">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-md-offset-2 col-md-push-4">
+                    <img src="/static/img/headshot.jpg" %} class="img-circle img-responsive" alt="family">
+                </div>
+                <div class="col-md-4 col-md-pull-4 text-center">
+                    <strong><h1>Product<br>Manager</h1></strong>
                 </div>
             </div>
         </div>
-    {% endfor %}
+    </div>
+</section>
 
-</div>
+<section id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h2 class="section-heading text-center">About</h2>
+                <hr class="hr-mine">
+                <p align="justify">I have always loved technology. I was that kid that my parents and neighbors asked about new cell phones and computers. I followed <a href="http://www.engadget.com" target="_blank">Engadget</a> religiously and always knew about the latest and greatest gadgets. In high-school, that passion manifested itself in my choice to take my first computer science classes. That first exposure to coding made me declare a computer science major when I started college.</p>
+
+                <p align="justify">However, after a co-op working as a software developer, I quickly realized that I didn't like being behind a computer for 8 hours each day. My co-workers and professors recommended I try project management or business analysis. I took a software project management class over the summer and quickly changed my major to information science, effectively starting down the project management route.</p>
+
+                <p align="justify">For my next two co-ops I worked in the project management field starting as an analyst in a project management office and then moving into a project manager role. I am unafraid to role up my sleeves and jump into code, but I love working with people and leading teams to deliver new, innovating, software systems. Now that I have graduated, I am looking to continue on this trajectory, looking for full-time roles in Product Management or Project Management at a tech company. Interested in hearing more? Check out my <a href="assets/ETyler_Resume.pdf" target="_blank" onclick="trackOutboundLink('http://www.ejtyler.com/assets/ETyler_resume.pdf'); return false;">resume</a> or <a href="http://www.linkedin.com/in/ericjtyler" target="_blank" onclick="trackOutboundLink('http://www.linkedin.com'); return false;">LinkedIn</a> and send me an <a href="mailto:tyler.ericj@gmail.com?subject=Saw your website..." onclick="trackOutboundLink('http://www.email.com'); return false;">e-mail</a></p>
+            </div>
+        </div>
+    <div>
+</section>
+
+<section>
+    <h2 class="section-heading text-center">Projects</h2>
+    <hr class="hr-mine">
+    <div class="row">
+
+        {% for project in projects %}
+            <div class="col-md-4">
+                <div class="card mb-2">
+                    <img class="card-img-top" src="{% static project.image %}" alt="Project Image">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ project.title }}</h5>
+                        <p class="card-text">{{ project.description }}</p>
+                        <a href="{% url 'project_detail' project.pk %}" class="btn btn-primary">
+                            Read More
+                        </a>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+
+    </div>
+</section>
 
 {% endblock %}
