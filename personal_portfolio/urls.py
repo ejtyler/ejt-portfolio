@@ -15,12 +15,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from projects import views
+from pages import views as pages_views
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("projects/", include("projects.urls")),
     path("blog/", include("blog.urls")),
-    path('', views.project_index, name='EJT Portfolio'),
+    path("pages/", include("pages.urls")),
+    path('', pages_views.home, name='EJT Portfolio'),
 ]
