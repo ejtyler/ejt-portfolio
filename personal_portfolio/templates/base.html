@@ -20,28 +20,30 @@
 <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
 </head>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container">
-        <a class="navbar-brand" href="{% url 'project_index' %}">EJT Portfolio</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+<body style="padding: 0px">
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="{% url 'project_index' %}">Home</a>
-                </li>
-                <li>
-                    <a class="nav-link" href="{% url 'blog_index' %}">Blog</a>
-                </li>
-            </ul>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="{% url 'project_index' %}">EJT Portfolio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="{% url 'project_index' %}">Home</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="{% url 'blog_index' %}">Blog</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
 
-</nav>
+    </nav>
 
-<div class="container">
     {% block page_content %}
     {% endblock %}
-</div>
+
+</body>
