@@ -19,7 +19,7 @@ from pages import views as pages_views
 
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('admin/', admin.site.urls, name="admin_index"),
     path("projects/", include("projects.urls")),
     path("blog/", include("blog.urls")),
     path("pages/", include("pages.urls")),
