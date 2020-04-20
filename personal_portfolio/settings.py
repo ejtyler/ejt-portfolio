@@ -18,7 +18,6 @@ from pprint import pprint
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-pprint(BASE_DIR)
 
 
 # Quick-start development settings - unsuitable for production
@@ -28,7 +27,7 @@ pprint(BASE_DIR)
 SECRET_KEY = 'dfkwh*-jswje=qt-d*z+7eq_*z^-r53-^xnj@5l#&^kphg5om)'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = os.environ['DEBUG']
 
 ALLOWED_HOSTS = ['*']
 
@@ -83,8 +82,6 @@ WSGI_APPLICATION = 'personal_portfolio.wsgi.application'
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3')
     }
 }
 
