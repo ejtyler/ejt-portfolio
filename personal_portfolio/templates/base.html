@@ -50,15 +50,9 @@
         {% block page_content %}
         {% endblock %}
 
-        <nav class="navbar-light bg-light">
-            <ul class="nav flex-column">
-                <li class="nav-item">
-                    <p class="nav-link disabled">&copy; Eric Tyler 2020 All Rights Reserved</p>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{% url 'admin:index' %}">Login</a>
-                </li>
-            </ul>
+        <nav class="nav flex-column navbar-light bg-light text-center">
+            <p class="nav-item nav-link disabled">&copy; Eric Tyler 2020 All Rights Reserved</p>
+            <a class="nav-item nav-link" href="{% url 'admin:index' %}">Login</a>
         </nav>
 
     </body>
