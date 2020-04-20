@@ -29,7 +29,7 @@ SECRET_KEY = os.environ['DJANGO_SECRET_KEY']
 ALLOWED_HOSTS = ['ejt-personal-portfolio-test.herokuapp.com', 'ejt-personal-portfolio.herokuapp.com', 'ejtyler.com', 'www.ejtyler.com']
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.environ['DEBUG']=='TRUE'
+DEBUG = os.environ['DEBUG'] == 'TRUE'
 
 # Application definition
 
@@ -128,7 +128,7 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'projects/static/'),
 )
 
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+#STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 LOGGING = {
     'version': 1,
