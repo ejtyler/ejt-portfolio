@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'projects',
     'blog',
     'pages',
+    'letsencrypt',
 ]
 
 MIDDLEWARE = [
@@ -126,7 +127,6 @@ STATIC_URL = '/static/'
 
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'projects/static/'),
-    os.path.join(BASE_DIR, '.well-known/acme-challenge/')
 )
 
 #STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'

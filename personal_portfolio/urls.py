@@ -15,6 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.conf.urls import url
 from pages import views as pages_views
 
 
@@ -24,4 +25,5 @@ urlpatterns = [
     path("blog/", include("blog.urls")),
     path("pages/", include("pages.urls")),
     path('', pages_views.home, name="site_index"),
+    url(r'^\.well-known/', include('letsencrypt.urls')),
 ]
