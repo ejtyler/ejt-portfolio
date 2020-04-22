@@ -1,4 +1,4 @@
-venv/
-db.sqlite3
 .well-known/
 .vscode/
+venv/
+db.sqlite3
