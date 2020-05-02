@@ -1,4 +1,3 @@
-.well-known/
 .vscode/
 venv/
 db.sqlite3
