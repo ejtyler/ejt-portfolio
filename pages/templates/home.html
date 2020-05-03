@@ -9,7 +9,7 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-4 align-self-center text-center text-lg-left">
-                    <strong><h1>Hi, I'm Eric.</h1></strong>
+                    <strong><h1>Hi, I'm Eric Tyler</h1></strong>
                     <h6>Managing products by day.<br>
                     Mixing drinks by night.<br>
                     Building software on the weekend.</h6>
@@ -76,12 +76,14 @@
         <hr class="hr-mine">
         <div class="row">
             {% for post in posts %}
+                <a href="{% url 'blog_detail' post.pk %}">
                 <div class="col-md-4">
                     <div class="card mb-2">
-                        <h5 class="card-title">{{ post.title }}</h5>
+                        <h5 class="card-title text-center">{{ post.title }}</h5>
                         <p class="card-text">{{ post.body | slice:":400" }}...</p>
                     </div>
                 </div>
+                </a>
             {% endfor %}
         </div>
     </div>
