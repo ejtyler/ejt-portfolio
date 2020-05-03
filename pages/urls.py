@@ -4,5 +4,5 @@ from . import views
 STATIC_URL = '/static/'
 
 urlpatterns = [
-    path("", views.home, name="ejt_portfolio"),
+    path('', views.home, name="ejt_portfolio"),
 ]
