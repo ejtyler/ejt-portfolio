@@ -80,23 +80,21 @@ body {
     background-size: cover;
 }
 
-#portfolio a:link div {
+#portfolio a:link {
     text-decoration: none !important;
     color: black;
 }
 
-#portfolio a:visited div {
+#portfolio a:visited {
     text-decoration: none;
     color: black;
 }
 
-#portfolio a:hover div {
-    text-decoration: none !important;
-    color: black;
+#portfolio a:hover {
     box-shadow: 5px 5px 2px grey;
 }
 
-#portfolio a:active div {
+#portfolio a:active {
     text-decoration: none !important;
     color: black;
     box-shadow: 5px 5px 2px grey;
