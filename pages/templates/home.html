@@ -38,7 +38,7 @@
     <div class="container">
         <h2 class="section-heading text-center">Code</h2>
         <hr class="hr-mine">
-        <div class="row pb-3">
+        <div class="row pb-3" id="project-list">
             {% for project in projects %}
                 <div class="col-md-4">
                     <a href="{% url 'project_detail' project.pk %}">

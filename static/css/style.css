@@ -80,26 +80,30 @@ body {
     background-size: cover;
 }
 
-#portfolio a:link {
+#portfolio #project-list a:link {
     text-decoration: none !important;
     color: black;
 }
 
-#portfolio a:visited {
+#portfolio #project-list a:visited {
     text-decoration: none;
-    color: black;
+    color: grey;
 }
 
-#portfolio a:hover {
+#portfolio #project-list a:hover {
     text-decoration: none;
-    color: black;
+}
+
+#portfolio #project-list a:active {
+    text-decoration: none;
+}
+
+#portfolio #project-list a:hover > div{
     box-shadow: 5px 5px 2px grey;
 }
 
-#portfolio a:active {
-    text-decoration: none;
-    color: black;
-    box-shadow: 5px 5px 2px grey;
+#portfolio #project-list a:active > div{
+    border: 2px solid black;
 }
 
 #drinks {
