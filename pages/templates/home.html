@@ -85,6 +85,9 @@
                         <div class="card-body">
                             <p class="card-text">{{ post.body | slice:":400" }}...</p>
                         </div>
+                        <div class="card-footer text-muted">
+                            {{ post.last_modified }}
+                        </div>
                     </div>
                 </div>
                 </a>
