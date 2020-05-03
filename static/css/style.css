@@ -80,6 +80,17 @@ body {
     background-size: cover;
 }
 
+#drinks {
+    background: linear-gradient(to right, rgba(256,256,256,.7), rgba(256,256,256,.7)), url(../img/bar.jpg);
+    background-position: center bottom;
+    padding: 40px;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
 #contact {
     background:linear-gradient(to right, rgba(256,256,256,.7), rgba(256,256,256,.7)), url(../img/network.jpeg);
     background-position: center bottom;
