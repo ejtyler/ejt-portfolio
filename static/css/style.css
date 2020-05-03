@@ -80,16 +80,17 @@ body {
     background-size: cover;
 }
 
-#portfolio > a:link, 
-#portfolio > a:visited {
+#portfolio a:link div, 
+#portfolio a:visited div{
     text-decoration: none;
     color: black;
 }
 
-#portfolio > a:hover, 
-#portfolio > a:active {
+#portfolio a:hover div, 
+#portfolio a:active div {
     text-decoration: none;
-    border-radius: 5;
+    color: black;
+    box-shadow: 10px 10px 5px grey;
 }
 
 #drinks {
