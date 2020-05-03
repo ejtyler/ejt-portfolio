@@ -91,6 +91,10 @@ body {
     background-size: cover;
 }
 
+#writing {
+    padding: 40px;
+}
+
 #contact {
     background:linear-gradient(to right, rgba(256,256,256,.7), rgba(256,256,256,.7)), url(../img/network.jpeg);
     background-position: center bottom;
