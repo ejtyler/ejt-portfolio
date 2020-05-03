@@ -80,6 +80,18 @@ body {
     background-size: cover;
 }
 
+#portfolio > a:link, 
+#portfolio > a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+#portfolio > a:hover, 
+#portfolio > a:active {
+    text-decoration: none;
+    border-radius: 5;
+}
+
 #drinks {
     background: linear-gradient(to right, rgba(256,256,256,.7), rgba(256,256,256,.7)), url(../img/bar.jpg);
     background-position: center bottom;
