@@ -21,9 +21,9 @@ from pages import views as pages_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("projects/", include("projects.urls")),
-    path("blog/", include("blog.urls")),
-    path("pages/", include("pages.urls")),
-    path('/', pages_views.home, name='site_index'),
+    path('projects/', include('projects.urls')),
+    path('blog/', include('blog.urls')),
+    path('pages/', include('pages.urls')),
+    path('', pages_views.home, name='site_index'),
     url(r'^\.well-known/', include('letsencrypt.urls')),
 ]
