@@ -91,11 +91,13 @@ body {
 }
 
 #portfolio a:hover {
+    text-decoration: none;
+    color: black;
     box-shadow: 5px 5px 2px grey;
 }
 
 #portfolio a:active {
-    text-decoration: none !important;
+    text-decoration: none;
     color: black;
     box-shadow: 5px 5px 2px grey;
 }
