@@ -80,17 +80,26 @@ body {
     background-size: cover;
 }
 
-#portfolio a:link div, 
-#portfolio a:visited div{
+#portfolio a:link div {
     text-decoration: none !important;
     color: black;
 }
 
-#portfolio a:hover div, 
+#portfolio a:visited div {
+    text-decoration: none;
+    color: black;
+}
+
+#portfolio a:hover div {
+    text-decoration: none !important;
+    color: black;
+    box-shadow: 5px 5px 2px grey;
+}
+
 #portfolio a:active div {
     text-decoration: none !important;
     color: black;
-    box-shadow: 10px 10px 5px grey;
+    box-shadow: 5px 5px 2px grey;
 }
 
 #drinks {
