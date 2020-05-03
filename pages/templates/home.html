@@ -40,7 +40,7 @@
         <hr class="hr-mine">
         <div class="row">
             {% for project in projects %}
-                <div class="col-md-4">
+                <div class="col-md-4 h-100">
                     <a href="{% url 'project_detail' project.pk %}">
                     <div class="card mb-2">
                         <img class="card-img-top" src="{% static project.image %}" alt="Project Image">
@@ -52,6 +52,9 @@
                     </a>
                 </div>
             {% endfor %}
+        </div>
+        <div class="row">
+            <a type="button" class="btn btn-lg btn-success" href="{% url project_index %}">See All Projects</a>
         </div>
     </div>
 </section>
