@@ -237,5 +237,9 @@ body {
 }
 
 .bottom-nav {
-    background-color: var(--color-primary-light);
+    background-color: var(--color-primary-medium);
+}
+
+.bottom-nav .disabled {
+    color: #000;
 }
