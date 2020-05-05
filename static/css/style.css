@@ -18,7 +18,6 @@
 }
 
 body {
-    padding-top: 60px;
     font-family: 'Muli', 'Roboto', 'Helvetica Neue', 'Open Sans', Arial, sans-serif;
 }
 
@@ -27,36 +26,36 @@ body {
     background-color: transparent;
 }
 
-.hr-mine, .hr-teal {
+.hr-primary {
 	max-width: 50px;
 	border-style: solid;
 	border-width: 2px;
 	border-color: var(--color-primary-dark);
 }
 
-.hr-orange {
+.hr-secondary {
     max-width: 50px;
     border-style: solid;
     border-width: 2px;
     border-color: var(--color-secondary-dark);
 }
 
-.btn, .btn-teal {
+.btn-primary {
     background: var(--color-primary-medium);
     border: 2px solid var(--color-primary-dark);
 }
 
-.btn:hover, .btn-teal:hover {
+.btn-primary:hover {
     background: var(--color-primary-dark);
     border: 2px solid var(--color-primary-dark);
 }
 
-.btn-orange {
+.btn-secondary {
     background: var(--color-secondary-medium);
     border: 2px solid var(--color-secondary-dark);
 }
 
-.btn-orange:hover {
+.btn-secondary:hover {
     background: var(--color-secondary-dark);
     border: 2px solid var(--color-secondary-dark);
 }
@@ -86,14 +85,8 @@ body {
     padding: 0px 20px 0px 20px;
 }
 
-#about .section-heading {
-    background-color: var(--color-primary-dark);
-    padding: 10px;
-    color: #fff;
-}
-
 #portfolio {
-    background: linear-gradient(to right, rgba(165,197,195,.85), rgba(165,197,195,.85)), url(../img/desk.jpg);
+    background: linear-gradient(to right, var(--transparent-primary-light), var(--transparent-primary-light)), url(../img/desk.jpg);
     background-position: center bottom;
     padding: 40px;
     -ms-background-size: cover;
@@ -101,6 +94,52 @@ body {
     -moz-background-size: cover;
     -webkit-background-size: cover;
     background-size: cover;
+}
+
+#drinks {
+    background: linear-gradient(to right, var(--transparent-secondary-light), var(--transparent-secondary-light)), url(../img/bar.jpg);
+    background-position: center bottom;
+    padding: 40px;
+    border: 20px solid var(--color-secondary-dark);
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+#writing {
+    border: 2px dotted var(--color-primary-dark);
+    margin: 60px 40px 40px 40px;
+    padding: 0px 20px 0px 20px;
+}
+
+#contact {
+    background: linear-gradient(to right, var(--transparent-secondary-light), var(--transparent-secondary-light)), url(../img/network.jpeg);
+    background-position: center bottom;
+    padding: 40px;
+    border: 20px solid var(--color-secondary-dark);
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.primary-section-header {
+    background-color: var(--color-primary-dark);
+    font-weight: bold;
+    padding: 10px;
+    color: #fff;
+    clip-path: polygon(5% 100%, 0% 0%, 100% 0%, 95% 100%)
+}
+
+.secondary-section-header {
+    background-color: var(--color-secondary-dark);
+    font-weight: bold;
+    padding: 10px;
+    color: #fff;
+    clip-path: polygon(5% 100%, 0% 0%, 100% 0%, 95% 100%)
 }
 
 #portfolio #project-list a:link {
@@ -127,30 +166,4 @@ body {
 
 #portfolio #project-list a:active > div{
     border: 2px solid black;
-}
-
-#drinks {
-    background: linear-gradient(to right, rgba(245,142,107,.85), rgba(245,142,107,.85)), url(../img/bar.jpg);
-    background-position: center bottom;
-    padding: 40px;
-    -ms-background-size: cover;
-    -o-background-size: cover;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    background-size: cover;
-}
-
-#writing {
-    padding: 40px;
-}
-
-#contact {
-    background: linear-gradient(to right, rgba(245,142,107,.85), rgba(245,142,107,.85)), url(../img/network.jpeg);
-    background-position: center bottom;
-    padding: 40px;
-    -ms-background-size: cover;
-    -o-background-size: cover;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    background-size: cover;
 }

@@ -25,9 +25,9 @@
 <section id="about">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-sm-4">
-                <h2 class="section-heading text-center">About Me</h2>
-                <hr class="hr-teal">
+            <div class="col-md-4">
+                <h2 class="primary-section-header text-center">About Me</h2>
+                <hr class="hr-primary">
             </div>
         </div>
         <div class="row">
@@ -38,8 +38,12 @@
 
 <section id="portfolio">
     <div class="container">
-        <h2 class="section-heading text-center">Code</h2>
-        <hr class="hr-teal">
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <h2 class="primary-section-header text-center">Code</h2>
+                <hr class="hr-primary">
+            </div>
+        </div>
         <div class="row pb-3" id="project-list">
             {% for project in projects %}
                 <div class="col-md-4">
@@ -57,7 +61,7 @@
         </div>
         <div class="row">
             <div class="col text-center">
-                <a type="button" class="btn btn-lg btn-success" href="{% url 'project_index' %}">See All Projects</a>
+                <a type="button" class="btn btn-primary btn-lg" href="{% url 'project_index' %}">See All Projects</a>
             </div>
         </div>
     </div>
@@ -65,8 +69,12 @@
 
 <section id="drinks">
     <div class="container pb-3">
-        <h2 class="section-heading text-center">Drinks</h2>
-        <hr class="hr-teal">
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <h2 class="secondary-section-header text-center">Drinks</h2>
+                <hr class="hr-secondary">
+            </div>
+        </div>
         <div class="row">
         </div>
     </div>
@@ -74,8 +82,12 @@
 
 <section id="writing">
     <div class="container pb-3">
-        <h2 class="section-heading text-center">Writing</h2>
-        <hr class="hr-teal">
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <h2 class="primary-section-header text-center">Writing</h2>
+                <hr class="hr-primary">
+            </div>
+        </div>
         <div class="row">
             {% for post in posts %}
                 <a href="{% url 'blog_detail' post.pk %}">
@@ -100,18 +112,22 @@
 
 <section id="contact">
     <div class="container pb-3">
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <h2 class="secondary-section-header text-center">Connect With Me</h2>
+                <hr class="hr-secondary">
+            </div>
+        </div>
         <div class="row">
             <div class="col-12 text-center">
                 <div class="contact-container">
-                    <h2 class="section-heading">Connect With Me</h2>
-                    <hr class="hr-teal">
-                    <a class="btn btn-social-icon btn-lg btn-twitter" href="https://twitter.com/ejtyler" target="_blank">
+                    <a class="btn btn-secondary btn-social-icon btn-lg btn-twitter" href="https://twitter.com/ejtyler" target="_blank">
                         <span class="fa fa-twitter"></span>
                     </a>
-                    <a class="btn btn-social-icon btn-lg btn-linkedin" href="https://www.linkedin.com/in/ericjtyler" target="_blank">
+                    <a class="btn btn-secondary btn-social-icon btn-lg btn-linkedin" href="https://www.linkedin.com/in/ericjtyler" target="_blank">
                         <span class="fa fa-linkedin"></span>
                     </a>
-                    <a class="btn btn-social-icon btn-lg btn-microsoft" href="mailto:tyler.ericj@gmail.com?subject=Saw your website..." target="_blank">
+                    <a class="btn btn-secondary btn-social-icon btn-lg btn-microsoft" href="mailto:tyler.ericj@gmail.com?subject=Saw your website..." target="_blank">
                         <span class="fa fa-envelope-o"></span>
                     </a>
                 </div>
