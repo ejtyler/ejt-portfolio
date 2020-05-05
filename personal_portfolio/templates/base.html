@@ -25,11 +25,15 @@
 
     <body>
 
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg top-nav">
             <div class="container">
-                <div class="navbar-brand-container justify-content-center">
-                    <a class="navbar-brand" href="{% url 'site_index' %}">Eric J. Tyler</a>
-                </div>
+                <a href="{% url 'site_index' %}">
+                    <div class="icon-outline justify-content-center">
+                        <div class="icon-border justify-content-center">
+                            <p class="icon navbar-brand" href="{% url 'site_index' %}">Eric J. Tyler</p>
+                        </div>
+                    </div>
+                </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -53,7 +57,7 @@
         {% block page_content %}
         {% endblock %}
 
-        <nav class="nav flex-column navbar-light bg-light text-center">
+        <nav class="nav bottom-nav flex-column text-center">
             <p class="nav-item nav-link disabled">&copy; Eric Tyler 2020 All Rights Reserved</p>
         </nav>
     </body>

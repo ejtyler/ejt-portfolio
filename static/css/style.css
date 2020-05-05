@@ -21,26 +21,36 @@ body {
     font-family: 'Muli', 'Roboto', 'Helvetica Neue', 'Open Sans', Arial, sans-serif;
 }
 
-.navbar {
+.top-nav {
     background-color: var(--color-primary-light);
 }
 
-.navbar-brand {
+.top-nav .nav-link {
+    font-weight: bold;
+    color: #000;
+}
+
+.top-nav .nav-link:hover {
+    color: var(--color-secondary-dark);
+}
+
+/* ################################################################### */
+/* #              Classes Comprising Icon                            # */
+/* ################################################################### */
+
+/* The core icon background and text formatting */
+.icon {
     font-weight: bold;
     padding: 5px 10px 5px 10px;
     background-color: #fff;
     color: var(--color-secondary-dark);
     clip-path: polygon(4% 100%, 0% 0%, 100% 0%, 96% 100%);
     -webkit-clip-path: polygon(4% 100%, 0% 0%, 100% 0%, 96% 100%);
-    margin-right: initial;
+    margin: initial;
 }
 
-.navbar-brand:hover {
-    color: #000;
-    border-color: #000;
-}
-
-.navbar-brand-container {
+/* The orange border on the icon */
+.icon-border {
     padding: 5px 6px 5px 6px;
     text-align: center;
     background-color: var(--color-secondary-dark);
@@ -48,27 +58,49 @@ body {
     -webkit-clip-path: polygon(5% 100%, 0% 0%, 100% 0%, 95% 100%);
 }
 
-.navbar-brand-container:hover {
+/* The white outer band around the icon */
+.icon-outline {
+    padding: 5px 6px 5px 6px;
+    text-align: center;
+    background-color: #fff;
+    clip-path: polygon(6% 100%, 0% 0%, 100% 0%, 94% 100%);
+    -webkit-clip-path: polygon(6% 100%, 0% 0%, 100% 0%, 94% 100%);
+}
+
+/* Hover over properties that change the orange elements black */
+.icon-outline:hover .icon-border {
     background-color: #000;
-    color: #000;
 }
 
-.navbar-brand-container:hover .navbar-brand {
+.icon-outline:hover .icon {
     color: #000;
 }
-
-.nav-link {
-    font-weight: bold;
-    color: #000;
-}
-
-.nav-link:hover {
-    color: var(--color-secondary-dark);
-}
+/* ################################################################### */
+/* #              End Icon Classes                                   # */
+/* ################################################################### */
 
 .jumbotron {
     margin-bottom: 0px;
     background-color: transparent;
+}
+
+#headline {
+    background: linear-gradient(to top right, var(--color-primary-dark) 60%, var(--color-primary-medium) 40%);
+    padding: 40px;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    color: #fff;
+}
+
+#headline img {
+    display: block;
+    margin: auto;
+    border: 5px solid;
+    border-color: var(--color-primary-light);
+    max-height: 300px;
 }
 
 .hr-primary {
@@ -105,28 +137,15 @@ body {
     border: 2px solid var(--color-secondary-dark);
 }
 
-#headline {
-    background: linear-gradient(to top right, var(--color-primary-dark) 60%, var(--color-primary-medium) 40%);
-    padding: 40px;
-    -ms-background-size: cover;
-    -o-background-size: cover;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    background-size: cover;
-    color: #fff;
-}
-
-#headline img {
-    display: block;
-    margin: auto;
-    border: 5px solid;
-    border-color: var(--color-primary-light);
-    max-height: 300px;
-}
-
-#about {
+.section-primary-on-white {
     border: 2px dotted var(--color-primary-dark);
-    margin: 60px 40px 40px 40px;
+    margin: 40px;
+    padding: 0px 20px 0px 20px;
+}
+
+.section-secondary-on-white {
+    border: 2px dotted var(--color-secondary-dark);
+    margin: 40px;
     padding: 0px 20px 0px 20px;
 }
 
@@ -153,11 +172,13 @@ body {
     background-size: cover;
 }
 
+/*
 #writing {
     border: 2px dotted var(--color-primary-dark);
     margin: 60px 40px 40px 40px;
     padding: 0px 20px 0px 20px;
 }
+*/
 
 #contact {
     background: linear-gradient(to right, var(--transparent-secondary-light), var(--transparent-secondary-light)), url(../img/network.jpeg);
@@ -213,4 +234,8 @@ body {
 
 #portfolio #project-list a:active > div{
     border: 2px solid black;
+}
+
+.bottom-nav {
+    background-color: var(--color-primary-light);
 }
