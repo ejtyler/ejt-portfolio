@@ -21,6 +21,26 @@ body {
     font-family: 'Muli', 'Roboto', 'Helvetica Neue', 'Open Sans', Arial, sans-serif;
 }
 
+.navbar-brand {
+    font-weight: bold;
+    color: var(--color-secondary-dark);
+    padding: 5px;
+    border: 5px solid var(--color-secondary-dark);
+}
+
+.navbar-brand:hover {
+    color: #000;
+    border-color: #000;
+}
+
+.nav-link {
+    color: #000;
+}
+
+.nav-link:hover {
+    color: var(--color-secondary-dark);
+}
+
 .jumbotron {
     margin-bottom: 0px;
     background-color: transparent;
