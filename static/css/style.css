@@ -21,17 +21,30 @@ body {
     font-family: 'Muli', 'Roboto', 'Helvetica Neue', 'Open Sans', Arial, sans-serif;
 }
 
-.top-nav {
+.navbar-light {
     background-color: var(--color-primary-light);
 }
 
-.top-nav .nav-link {
-    font-weight: bold;
-    color: #000;
+.navbar-light .navbar-brand {
+    color: var(--color-secondary-dark);
 }
 
-.top-nav .nav-link:hover {
+.navbar-light .navbar-nav .nav-link {
+    font-weight: bold;
+    color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
     color: var(--color-secondary-dark);
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(256, 256, 256)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-light .navbar-toggler {
+    color: #000;
+    border: 2px solid #fff;
 }
 
 /* ################################################################### */
