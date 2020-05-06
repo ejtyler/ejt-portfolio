@@ -26,31 +26,28 @@
     <body>
 
         <nav class="navbar navbar-expand-lg top-nav">
-            <div class="container">
-                <a href="{% url 'site_index' %}">
-                    <div class="icon-outline justify-content-center">
-                        <div class="icon-border justify-content-center">
-                            <p class="icon navbar-brand" href="{% url 'site_index' %}">Eric J. Tyler</p>
-                        </div>
+            <a href="{% url 'site_index' %}">
+                <div class="icon-outline justify-content-center">
+                    <div class="icon-border justify-content-center">
+                        <p class="icon navbar-brand" href="{% url 'site_index' %}">Eric J. Tyler</p>
                     </div>
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-left: 1.5em;">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="{% url 'site_index' %}">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{% url 'project_index' %}">Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{% url 'blog_index' %}">Writing</a>
-                        </li>
-                    </ul>
                 </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarToggler">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="{% url 'site_index' %}">Home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'project_index' %}">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'blog_index' %}">Writing</a>
+                    </li>
+                </ul>
             </div>
         </nav>
 
