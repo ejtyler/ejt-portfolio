@@ -98,7 +98,7 @@ body {
 }
 
 #headline {
-    background: linear-gradient(to top right, var(--color-primary-dark) 60%, var(--color-primary-medium) 40%);
+    background: linear-gradient(to top right, var(--color-primary-dark) 57%, var(--color-primary-light) 57%, 58%, var(--color-primary-medium) 42%);
     padding: 40px;
     -ms-background-size: cover;
     -o-background-size: cover;
@@ -111,7 +111,7 @@ body {
 #headline img {
     display: block;
     margin: auto;
-    border: 5px solid;
+    border: 10px solid;
     border-color: var(--color-primary-light);
     max-height: 300px;
 }
@@ -206,6 +206,8 @@ body {
 }
 
 .primary-section-header {
+    position: relative;
+    bottom: 30%;
     background-color: var(--color-primary-dark);
     font-weight: bold;
     padding: 10px;
@@ -215,6 +217,8 @@ body {
 }
 
 .secondary-section-header {
+    position: relative;
+    bottom: 30%;
     background-color: var(--color-secondary-dark);
     font-weight: bold;
     padding: 10px;
