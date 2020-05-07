@@ -7,9 +7,9 @@ class PostAdmin(admin.ModelAdmin):
     pass
 
 
-class CategoryAdmin(admin.ModelAdmin):
+class BlogCategoryAdmin(admin.ModelAdmin):
     pass
 
 
 admin.site.register(Post, PostAdmin)
-admin.site.register(Category, CategoryAdmin)
+admin.site.register(Category, BlogCategoryAdmin)
