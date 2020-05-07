@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'blog',
     'pages',
     'letsencrypt',
+    'drinks',
 ]
 
 MIDDLEWARE = [
