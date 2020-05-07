@@ -24,6 +24,7 @@ urlpatterns = [
     path('projects/', include('projects.urls')),
     path('blog/', include('blog.urls')),
     path('pages/', include('pages.urls')),
+    path('drinks/', include('drinks.urls')),
     path('', pages_views.home, name='site_index'),
     url(r'^\.well-known/', include('letsencrypt.urls')),
 ]
