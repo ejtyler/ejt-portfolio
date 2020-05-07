@@ -3,8 +3,9 @@ from .models import Drink
 
 # Create your views here.
 def drinks_index(request):
+    drinks = Drink.objects.all()
     context = {
-        
+        'drinks': drinks
     }
     return render(request, 'drinks_index.html', context)
 
