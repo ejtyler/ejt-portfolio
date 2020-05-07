@@ -11,8 +11,8 @@
                 <div class="col-lg-4 align-self-center text-center text-lg-left">
                     <strong><h1>Hi, I'm Eric Tyler</h1></strong>
                     <h6>Managing products by day.<br>
-                    Mixing drinks by night.<br>
-                    Building software on the weekend.</h6>
+                    Writing code by night.<br>
+                    Mixing drinks on the weekend.</h6>
                 </div>
                 <div class="col-lg-4 align-self-center text-center">
                     <img src="/static/img/headshot.png" class="rounded-circle img-responsive" alt="family">
@@ -36,7 +36,7 @@
     <div>
 </section>
 
-<section id="portfolio">
+<section id="code" class="portfolio">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-4">
@@ -44,14 +44,14 @@
                 <hr class="hr-primary">
             </div>
         </div>
-        <div class="row pb-3" id="project-list">
+        <div class="row pb-3 highlight-list" id="project-list">
             {% for project in projects %}
                 <div class="col-md-4">
                     <a href="{% url 'project_detail' project.pk %}">
-                    <div class="card mb-2 h-100">
+                    <div class="card mb-2 h-100 highlight highlight-primary">
                         <img class="card-img-top" src="{% static project.image %}" alt="Project Image">
                         <div class="card-body">
-                            <h5 class="card-title text-center">{{ project.title }}</h5>
+                            <h3 class="card-title text-center">{{ project.title }}</h3>
                             <p class="card-text">{{ project.description }}</p>
                         </div>
                     </div>
@@ -80,7 +80,7 @@
     </div>
 </section>
 
-<section id="writing" class="section-primary-on-white">
+<section id="writing" class="section-primary-on-white portfolio">
     <div class="container pb-3">
         <div class="row justify-content-center">
             <div class="col-md-4">
@@ -88,23 +88,23 @@
                 <hr class="hr-primary">
             </div>
         </div>
-        <div class="row">
+        <div class="row highlight-list">
             {% for post in posts %}
-                <a href="{% url 'blog_detail' post.pk %}">
                 <div class="col-md-4">
-                    <div class="card mb-2">
-                        <div class="card-header">
-                            <h5 class="card-title text-center">{{ post.title }}</h5>
+                    <a href="{% url 'blog_detail' post.pk %}">
+                        <div class="card mb-2 highlight highlight-primary">
+                            <div class="card-header">
+                                <h3 class="card-title text-center">{{ post.title }}</h3>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">{{ post.body | slice:":400" }}...</p>
+                            </div>
+                            <div class="card-footer text-right">
+                                {{ post.last_modified }}
+                            </div>
                         </div>
-                        <div class="card-body">
-                            <p class="card-text">{{ post.body | slice:":400" }}...</p>
-                        </div>
-                        <div class="card-footer text-muted text-right">
-                            {{ post.last_modified }}
-                        </div>
-                    </div>
+                    </a>
                 </div>
-                </a>
             {% endfor %}
         </div>
     </div>

@@ -162,7 +162,7 @@ body {
     padding: 0px 20px 0px 20px;
 }
 
-#portfolio {
+#code {
     background: linear-gradient(to right, var(--transparent-primary-light), var(--transparent-primary-light)), url(../img/desk.jpg);
     background-position: center bottom;
     padding: 40px;
@@ -184,14 +184,6 @@ body {
     -webkit-background-size: cover;
     background-size: cover;
 }
-
-/*
-#writing {
-    border: 2px dotted var(--color-primary-dark);
-    margin: 60px 40px 40px 40px;
-    padding: 0px 20px 0px 20px;
-}
-*/
 
 #contact {
     background: linear-gradient(to right, var(--transparent-secondary-light), var(--transparent-secondary-light)), url(../img/network.jpeg);
@@ -227,30 +219,44 @@ body {
     -webkit-clip-path: polygon(5% 100%, 0% 0%, 100% 0%, 95% 100%);
 }
 
-#portfolio #project-list a:link {
+.portfolio .highlight-list a:link {
     text-decoration: none !important;
-    color: black;
+    color: #000;
 }
 
-#portfolio #project-list a:visited {
+.portfolio .highlight-list a:visited {
     text-decoration: none;
     color: grey;
 }
 
-#portfolio #project-list a:hover {
+.portfolio .highlight-list a:hover {
     text-decoration: none;
 }
 
-#portfolio #project-list a:active {
+.portfolio .highlight-list a:active {
     text-decoration: none;
 }
 
-#portfolio #project-list a:hover > div{
-    box-shadow: 0px 7px 15px 15px var(--color-primary-dark);
+.portfolio .highlight-list a:hover > .highlight-primary {
+    box-shadow: 0px 0px 15px 3px var(--color-primary-dark);
 }
 
-#portfolio #project-list a:active > div{
+.portfolio .highlight-list a:hover > .highlight-secondary {
+    box-shadow: 0px 0px 15px 3px var(--color-secondary-dark);
+}
+
+.portfolio .highlight-list a:active > .highlight {
     border: 2px solid black;
+}
+
+.highlight-primary > .card-header {
+    background-color: var(--color-primary-light);
+    color: #000;
+}
+
+.highlight-primary > .card-footer {
+    background-color: var(--color-primary-light);
+    color: #000;
 }
 
 .bottom-nav {
