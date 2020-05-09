@@ -17,7 +17,7 @@
                 <div class="col-md-3">
                     <a href="{% url 'drink_detail' drink.pk %}">
                     <div class="card mb-2 highlight highlight-secondary">
-                        <img class="card-img-top" src="{{ MEDIA.URL }}{{ drink.image.url }}" alt="Drink Image">
+                        <img class="card-img-top" src="{{ drink.image.url }}" alt="Drink Image">
                         <div class="card-body">
                             <h2 class="card-title text-center">{{ drink.name }}</h2>
                             <p class="card-text">{{ drink.summary | slice:":40" }}
