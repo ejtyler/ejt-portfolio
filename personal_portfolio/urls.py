@@ -16,6 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from django.conf.urls import url
+
+from django.conf import settings
+from django.views.static import serve
+
 from pages import views as pages_views
 
 
@@ -28,3 +32,10 @@ urlpatterns = [
     path('', pages_views.home, name='site_index'),
     url(r'^\.well-known/', include('letsencrypt.urls')),
 ]
+
+if settings.DEBUG:
+    urlpatterns += [
+        url(r'^media/(?P<path>.*)$', serve, {
+            'document_root': settings.MEDIA_ROOT,
+        }),
+    ]
