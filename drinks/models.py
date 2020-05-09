@@ -10,4 +10,4 @@ class Drink(models.Model):
     recipe = models.TextField()
     summary = models.TextField()
     categories = models.ManyToManyField('Category', related_name='drinks')
-    image = models.ImageField(upload_to='static/img')
+    image = models.ImageField(upload_to='drinks/%y/%m')
