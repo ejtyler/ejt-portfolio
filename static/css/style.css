@@ -17,8 +17,27 @@
     --transparent-secondary-light: rgba(245,142,107,.85);
 }
 
-body {
+html, body {
     font-family: 'Muli', 'Roboto', 'Helvetica Neue', 'Open Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#container {
+    min-height: 100%;
+    position: relative;
+}
+
+#body {
+    padding-bottom: 56px;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 56px;
 }
 
 .navbar-light {
