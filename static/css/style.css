@@ -182,7 +182,7 @@ html, body {
 }
 
 #code {
-    background: linear-gradient(to right, var(--transparent-primary-light), var(--transparent-primary-light)), url(../img/desk.jpg);
+    background: linear-gradient(to right, var(--transparent-primary-light), var(--transparent-primary-light)), url(./img/desk.jpg);
     background-position: center bottom;
     padding: 40px;
     -ms-background-size: cover;
