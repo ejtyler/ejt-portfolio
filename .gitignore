@@ -2,4 +2,4 @@
 venv/
 db.sqlite3
 .env
-static/config/
+personal_portfolio/static/config/
