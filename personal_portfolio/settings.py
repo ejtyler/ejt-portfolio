@@ -124,7 +124,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 DEFAULT_FILE_STORAGE = 'storages.backends.gcloud.GoogleCloudStorage'
-GS_BUCKET_NAME = 'ejt-personal-portfolio-dev-storage'
+GS_BUCKET_NAME = os.environ['GS_BUCKET_NAME']
 
 STATICFILES_STORAGE = 'storages.backends.gcloud.GoogleCloudStorage'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
