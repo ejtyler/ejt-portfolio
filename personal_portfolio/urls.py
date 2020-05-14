@@ -32,10 +32,3 @@ urlpatterns = [
     path('', pages_views.home, name='site_index'),
     url(r'^\.well-known/', include('letsencrypt.urls')),
 ]
-
-if settings.DEBUG:
-    urlpatterns += [
-        url(r'^media/(?P<path>.*)$', serve, {
-            'document_root': settings.MEDIA_ROOT,
-        }),
-    ]
