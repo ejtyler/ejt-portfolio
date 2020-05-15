@@ -4,40 +4,7 @@
 
 {% block head_content %}
     <style>
-        #code {
-            background: linear-gradient(to right, var(--transparent-primary-light), var(--transparent-primary-light)), url({% static 'img/desk.jpg' %});
-            background-position: center bottom;
-            padding: 40px;
-            -ms-background-size: cover;
-            -o-background-size: cover;
-            -moz-background-size: cover;
-            -webkit-background-size: cover;
-            background-size: cover;
-        }
-
-        #drinks {
-            background: linear-gradient(to right, var(--transparent-secondary-light), var(--transparent-secondary-light)), url({% static 'img/bar.jpg' %});
-            background-position: center bottom;
-            padding: 40px;
-            border: 20px solid var(--color-secondary-dark);
-            -ms-background-size: cover;
-            -o-background-size: cover;
-            -moz-background-size: cover;
-            -webkit-background-size: cover;
-            background-size: cover;
-        }
-
-        #contact {
-            background: linear-gradient(to right, var(--transparent-secondary-light), var(--transparent-secondary-light)), url({% static 'img/network.jpeg' %});
-            background-position: center bottom;
-            padding: 40px;
-            border: 20px solid var(--color-secondary-dark);
-            -ms-background-size: cover;
-            -o-background-size: cover;
-            -moz-background-size: cover;
-            -webkit-background-size: cover;
-            background-size: cover;
-        }
+        
     </style>
 {% endblock %}
 
@@ -74,7 +41,15 @@
     <div>
 </section>
 
-<section id="code" class="portfolio">
+<section id="code" class="portfolio" 
+style="background: linear-gradient(to right, var(--transparent-primary-light), var(--transparent-primary-light)), url({% static 'img/desk.jpg' %});
+background-position: center bottom;
+padding: 40px;
+-ms-background-size: cover;
+-o-background-size: cover;
+-moz-background-size: cover;
+-webkit-background-size: cover;
+background-size: cover;">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-4">
@@ -105,7 +80,16 @@
     </div>
 </section>
 
-<section id="drinks" class="portfolio">
+<section id="drinks" class="portfolio" 
+style="background: linear-gradient(to right, var(--transparent-secondary-light), var(--transparent-secondary-light)), url({% static 'img/bar.jpg' %}); 
+background-position: center bottom; 
+background-size: cover;
+padding: 40px;
+border: 20px solid var(--color-secondary-dark);
+-ms-background-size: cover;
+-o-background-size: cover;
+-moz-background-size: cover;
+-webkit-background-size: cover;">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-4">
@@ -171,7 +155,16 @@
     </div>
 </section>
 
-<section id="contact">
+<section id="contact" 
+style="background: linear-gradient(to right, var(--transparent-secondary-light), var(--transparent-secondary-light)), url({% static 'img/network.jpeg' %});
+background-position: center bottom;
+background-size: cover;
+padding: 40px;
+border: 20px solid var(--color-secondary-dark);
+-ms-background-size: cover;
+-o-background-size: cover;
+-moz-background-size: cover;
+-webkit-background-size: cover;">
     <div class="container pb-3">
         <div class="row justify-content-center">
             <div class="col-md-4">
