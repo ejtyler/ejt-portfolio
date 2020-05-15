@@ -4,6 +4,43 @@
 
 {% block page_content %}
 
+<style>
+    #code {
+        background: linear-gradient(to right, var(--transparent-primary-light), var(--transparent-primary-light)), url({% static 'img/desk.jpg' %});
+        background-position: center bottom;
+        padding: 40px;
+        -ms-background-size: cover;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+
+    #drinks {
+        background: linear-gradient(to right, var(--transparent-secondary-light), var(--transparent-secondary-light)), url({% static 'img/bar.jpg' %});
+        background-position: center bottom;
+        padding: 40px;
+        border: 20px solid var(--color-secondary-dark);
+        -ms-background-size: cover;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+
+    #contact {
+        background: linear-gradient(to right, var(--transparent-secondary-light), var(--transparent-secondary-light)), url({% static 'img/network.jpeg' %});
+        background-position: center bottom;
+        padding: 40px;
+        border: 20px solid var(--color-secondary-dark);
+        -ms-background-size: cover;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+</style>
+
 <section id="headline">
     <div class="jumbotron">
         <div class="container">

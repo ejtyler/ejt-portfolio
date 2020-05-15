@@ -181,41 +181,6 @@ html, body {
     padding: 0px 20px 0px 20px;
 }
 
-#code {
-    background: linear-gradient(to right, var(--transparent-primary-light), var(--transparent-primary-light)), url(./img/desk.jpg);
-    background-position: center bottom;
-    padding: 40px;
-    -ms-background-size: cover;
-    -o-background-size: cover;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    background-size: cover;
-}
-
-#drinks {
-    background: linear-gradient(to right, var(--transparent-secondary-light), var(--transparent-secondary-light)), url(../img/bar.jpg);
-    background-position: center bottom;
-    padding: 40px;
-    border: 20px solid var(--color-secondary-dark);
-    -ms-background-size: cover;
-    -o-background-size: cover;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    background-size: cover;
-}
-
-#contact {
-    background: linear-gradient(to right, var(--transparent-secondary-light), var(--transparent-secondary-light)), url(../img/network.jpeg);
-    background-position: center bottom;
-    padding: 40px;
-    border: 20px solid var(--color-secondary-dark);
-    -ms-background-size: cover;
-    -o-background-size: cover;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    background-size: cover;
-}
-
 .primary-section-header {
     position: relative;
     bottom: 30%;
