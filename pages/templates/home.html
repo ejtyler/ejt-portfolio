@@ -2,8 +2,6 @@
 
 {% load static %}
 
-{% block page_content %}
-
 <style>
     #code {
         background: linear-gradient(to right, var(--transparent-primary-light), var(--transparent-primary-light)), url({% static 'img/desk.jpg' %});
@@ -40,6 +38,8 @@
         background-size: cover;
     }
 </style>
+
+{% block page_content %}
 
 <section id="headline">
     <div class="jumbotron">
