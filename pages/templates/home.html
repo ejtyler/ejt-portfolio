@@ -90,7 +90,7 @@
                         <img class="card-img-top" src="{% static project.image %}" alt="Project Image">
                         <div class="card-body">
                             <h3 class="card-title text-center">{{ project.title }}</h3>
-                            <p class="card-text">{{ project.description|slice:":95" }}...</p>
+                            <p class="card-text">{{ project.description|slice:":95"|striptags }}...</p>
                         </div>
                     </div>
                     </a>
@@ -121,7 +121,7 @@
                             <img class="card-img-top" src="{{ drink.image.url }}" alt="Drink Image">
                             <div class="card-body">
                                 <h2 class="card-title text-center">{{ drink.name }}</h2>
-                                <p class="card-text">{{ drink.summary|slice:":80" }}...</p>
+                                <p class="card-text">{{ drink.summary|slice:":80"|striptags }}...</p>
                             </div>
                         </div>
                     </a>
@@ -144,7 +144,7 @@
                 <hr class="hr-primary">
             </div>
         </div>
-        <div class="row highlight-list">
+        <div class="row pb-3 highlight-list">
             {% for post in posts %}
                 <div class="col-md-4">
                     <a href="{% url 'blog_detail' post.pk %}">
@@ -153,7 +153,7 @@
                                 <h3 class="card-title text-center">{{ post.title }}</h3>
                             </div>
                             <div class="card-body">
-                                <p class="card-text">{{ post.body|slice:":400" }}...</p>
+                                <p class="card-text">{{ post.body|slice:":400"|striptags }}...</p>
                             </div>
                             <div class="card-footer text-right">
                                 {{ post.last_modified }}
@@ -162,6 +162,11 @@
                     </a>
                 </div>
             {% endfor %}
+        </div>
+        <div class="row">
+            <div class="col text-center">
+                <a type="button" class="btn btn-primary btn-lg" href="{% url 'blog_index' %}">See All Writing</a>
+            </div>
         </div>
     </div>
 </section>
