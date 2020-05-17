@@ -1,1 +1,34 @@
 {% extends "base.html" %}
+<!-- {% load static %} -->
+
+{% block page_content %}
+    <div class="container pt-3 pb-3">
+        <div class="row">
+            <h1>{{ drink.name }}</h1>
+        </div>
+        <div class="row pl-3 pb-3">
+            <small>Categories:&nbsp;
+                {% for category in drink.categories.all %}
+                    <a href="{% url 'drink_category' category.name %}">
+                        {{ category.name }}
+                    </a>&nbsp;
+                {% endfor %}
+            </small>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="{{ drink.image.url }}" alt="Drink Image" width="100%">
+            </div>
+            <div class="col-md-8">
+                <section id="recipe">
+                    <h2>Recipe:</h2>
+                    <p>{{ drink.recipe|linebreaks }}</p>
+                </section>
+                <section id="summary">
+                    <h2>Summary:</h2>
+                    <p>{{ drink.summary|linebreaks }}</p>
+                </section>
+            </div>
+        </div>
+    </div>
+{% endblock %}

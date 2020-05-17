@@ -10,8 +10,11 @@ def drinks_index(request):
     return render(request, 'drinks_index.html', context)
 
 
-def drink_detail(request, pk):
-    context = {}
+def drink_detail(request, drinkkey):
+    drink = Drink.objects.get(pk=drinkkey)
+    context = {
+        'drink': drink,
+    }
     return render(request, 'drink_detail.html', context)
 
 
