@@ -16,5 +16,10 @@ def drink_detail(request, pk):
 
 
 def drink_category(request, category):
-    context = {}
+    drinks = Drink.objects.filter(
+        categories__name__contains=category)
+    context = {
+        "category": category,
+        "drinks": drinks,
+    }
     return render(request, 'drink_category.html', context)
