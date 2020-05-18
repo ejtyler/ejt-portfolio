@@ -56,7 +56,7 @@ background-size: cover;">
                 <div class="col-md-4">
                     <a href="{% url 'project_detail' project.pk %}">
                     <div class="card mb-2 h-100 highlight highlight-primary">
-                        <img class="card-img-top" src="{% static project.image %}" alt="Project Image">
+                        <img class="card-img-top" src="{{ project.image.url }}" alt="Project Image">
                         <div class="card-body">
                             <h3 class="card-title text-center">{{ project.title }}</h3>
                             <p class="card-text">{{ project.description|slice:":95"|striptags }}...</p>
