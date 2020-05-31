@@ -198,8 +198,7 @@ html, body {
     position: relative;
     bottom: 30%;
     background-color: var(--color-primary-dark);
-    font-family: 'Mrs Sheppards', 'Roboto', cursive, sans-serif;
-    font-weight: bold;
+    font-weight: medium;
     padding: 10px;
     color: #fff;
     clip-path: polygon(5% 100%, 0% 0%, 100% 0%, 95% 100%);
@@ -210,8 +209,7 @@ html, body {
     position: relative;
     bottom: 30%;
     background-color: var(--color-secondary-dark);
-    font-family: 'Mrs Sheppards', 'Roboto', cursive, sans-serif;
-    font-weight: bold;
+    font-weight: medium;
     padding: 10px;
     color: #fff;
     clip-path: polygon(5% 100%, 0% 0%, 100% 0%, 95% 100%);
