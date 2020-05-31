@@ -1,4 +1,5 @@
-/* Primary Color is Teal */
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;300;400;500;700;800;900&family=Mrs+Sheppards&display=swap');
+
 :root {
     /* Primary Color is Teal */
     --color-primary-dark: #007872;
@@ -72,7 +73,9 @@ html, body {
 
 /* The core icon background and text formatting */
 .icon {
-    font-weight: bold;
+    font-family: 'Mrs Sheppards', cursive;
+    font-size: 25px;
+    /* font-weight: bold; */
     padding: 5px 10px 5px 10px;
     background-color: #fff;
     color: var(--color-secondary-dark);
