@@ -1,4 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;300;400;500;700;800;900&family=Mrs+Sheppards&display=swap');
+/* ################################# */
+/* # Import Following Google Fonts # */
+/* # * Heebo - default font        # */
+/* # * Mrs Sheppard - logo font    # */
+/* # * Roboto - backup font        # */
+/* ################################# */
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;300;400;500;700;800;900&family=Mrs+Sheppards&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 :root {
     /* Primary Color is Teal */
@@ -19,7 +25,7 @@
 }
 
 html, body {
-    font-family: 'Muli', 'Roboto', 'Helvetica Neue', 'Open Sans', Arial, sans-serif;
+    font-family: 'Heebo', 'Roboto', Arial, sans-serif;
     margin: 0;
     padding: 0;
     height: 100%;
@@ -67,13 +73,15 @@ html, body {
     border: 2px solid #fff;
 }
 
-/* ################################################################### */
-/* #              Classes Comprising Icon                            # */
-/* ################################################################### */
+/* ############################# */
+/* ##                         ## */
+/* ## Classes Comprising Icon ## */
+/* ##                         ## */
+/* ############################# */
 
 /* The core icon background and text formatting */
 .icon {
-    font-family: 'Mrs Sheppards', cursive;
+    font-family: 'Mrs Sheppards', 'Roboto', cursive, sans-serif;
     font-size: 25px;
     /* font-weight: bold; */
     padding: 5px 10px 5px 10px;
@@ -110,9 +118,11 @@ html, body {
 .icon-outline:hover .icon {
     color: #000;
 }
-/* ################################################################### */
-/* #              End Icon Classes                                   # */
-/* ################################################################### */
+/* ###################### */
+/* ##                  ## */
+/* ## End Icon Classes ## */
+/* ##                  ## */
+/* ###################### */
 
 .jumbotron {
     margin-bottom: 0px;
@@ -188,6 +198,7 @@ html, body {
     position: relative;
     bottom: 30%;
     background-color: var(--color-primary-dark);
+    font-family: 'Mrs Sheppards', 'Roboto', cursive, sans-serif;
     font-weight: bold;
     padding: 10px;
     color: #fff;
@@ -199,6 +210,7 @@ html, body {
     position: relative;
     bottom: 30%;
     background-color: var(--color-secondary-dark);
+    font-family: 'Mrs Sheppards', 'Roboto', cursive, sans-serif;
     font-weight: bold;
     padding: 10px;
     color: #fff;
